@@ -5,5 +5,6 @@ function fibonacci(num) {
     }
     return fib.slice(0, num);
 }
+console.log(fibonacciSeries(num));
 
 module.exports = fibonacci;
