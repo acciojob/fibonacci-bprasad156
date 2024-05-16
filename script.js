@@ -1,5 +1,4 @@
-function fibonacci(num) 
-function fibonacci(num) 
+function fibonacci(num) {
 let a= 0;
 let b=1;
 console.log(a);
@@ -10,6 +9,7 @@ for(let i=0;i<=num.length;i=i+1){
 	a=b;
 	b=i;
 // your code here
+}
 }
 
 module.exports = fibonacci;
