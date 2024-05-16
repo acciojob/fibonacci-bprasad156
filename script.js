@@ -1,15 +1,11 @@
 function fibonacci(num) {
-let a= 0;
-let b=1;
-console.log(a);
-console.log(b);
-for(let i=0;i<=num.length;i=i+1){
-	i=a+b
-	console.log(i)
-	a=b;
-	b=i;
-// your code here
+    if (num == 1)
+        return 0;
+    if (num == 2)
+        return 1;
+    return fibonacci(num - 1) + fibonacci(num - 2);
 }
-}
+console.log("Fibonacci(5): " + fibonacci(5));
+console.log("Fibonacci(8): " + fibonacci(8));
 
 module.exports = fibonacci;
