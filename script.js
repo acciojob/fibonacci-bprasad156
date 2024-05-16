@@ -1,11 +1,9 @@
 function fibonacci(num) {
-    if (num == 1)
-        return 0;
-    if (num == 2)
-        return 1;
-    return fibonacci(num - 1) + fibonacci(num - 2);
+    let fib = [0, 1];
+    for (let i = 2; i < n; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+    }
+    return fib.slice(0, num);
 }
-console.log("Fibonacci(5): " + fibonacci(5));
-console.log("Fibonacci(8): " + fibonacci(8));
 
 module.exports = fibonacci;
